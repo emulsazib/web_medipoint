@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9D44C0;
+}
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content: space-between;
+    height: 70px;
+    margin: 0;
+    background-color: #0E21A0;
+}
+main{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.logo{
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+ul li{
+    display: inline;
+    float: left;
+    padding: 8px;
+    margin-top: 8px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #EA1179;
+    padding: 7px;
+    border-radius: 5px;
+    width: 130px;
+}
+ul li :hover{
+    background-color: #EC53B0;
+}
+.container{
+    width: 100%;
+    background-color: #9D44C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_group{
+    margin: 0px 70px;
+}
+.button_group button{
+    justify-content: center;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 200px;
+    
+    padding: 5px;
+    background-color: #EA1179;
+    color: #fff;
+}
+.button_group button:hover{
+    background-color: #EC53B0;
+}
+.button_group input{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+}
+#search_btn{
+    width: 0; 
+    margin: auto; 
+    padding: 0px; 
+    font-size: 22px;
+}
+#search_btn:hover{
+    color: #000;
+}
+.container table tbody tr td{
+    border: 1px solid rgb(36, 36, 36);
+    padding: 2px;
+    background-color: #fff;
+}
+.container table thead tr td{
+    border: 1px solid rgb(36, 36, 36);
+    background-color: #EA1179;
+    color: #fff;
+}
+#DataTables_Table_0_filter{
+    color: #fff;
+    font-weight: bold;
+}
+#DataTables_Table_0_filter input{
+    background-color: #fff;
+    color: #000;
+    width: 300px;
+    margin: 4px 2px;
+}
+#DataTables_Table_0_length{
+    color: #fff;
+}
+#DataTables_Table_0_info{
+    color: #fff;
+}
+#DataTables_Table_0_paginate{
+    color: #fff;
+}
+.table tbody tr td a{
+    margin-left: 20%;
+}
+.popup{
+    width: 400px;
+    transform: translate(-50%,-50%) scale(0.1);
+    position: absolute;
+    top: 0;
+    margin-left: 180px;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    background-color: #EA1179;
+    box-sizing:  10px 10px 8px 10px #888888;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+.open_popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    box-sizing:  10px 10px 8px 10px #888888;
+}
+.popup h1{
+    text-align: center;
+}
+.popup form input{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+.popup form button{
+    justify-content: center;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #0E21A0;
+    color: #fff;
+} 
+/*
+.add_product_main{
+    width: 360px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.add_product form input{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+
+}
+.add_product form button{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #EA1179;
+    color: #fff;
+}
+.add_product form button:hover{
+    background-color: #EC53B0;
+}
+.productpage_main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.button_group{
+    display: flex;
+    flex-direction: row;
+}
+.button_group button{
+    justify-content: center;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #EA1179;
+    color: #fff;
+}
+.button_group button:hover{
+    background-color: #EC53B0;
+}
+.button_group input{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+#search_btn{
+    width: 0; 
+    margin: 8px; 
+    padding: 0; 
+    font-size: 32px;
+}
+#search_btn:hover{
+    color: #000;
+}
+.product_table table{
+    width: 860px;
+    margin: 10px;
+    height: 400px;
+}
+.product_table table tbody tr td{
+    border: 1px solid rgb(36, 36, 36);
+    padding: 2px;
+    background-color: #fff;
+}
+.product_table table thead tr td{
+    border: 1px solid rgb(36, 36, 36);
+    padding: 2px;
+    background-color: #EA1179;
+    color: #fff;
+}
+.product_table table{
+    border: 1px solid rgb(36, 36, 36);
+}
+.popup{
+    width: 400px;
+    transform: translate(-50%,-50%) scale(0.1);
+    position: absolute;
+    top: 0;
+    margin-left: 180px;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    background-color: #9D44C0;
+}
+.open_popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup h1{
+    text-align: center;
+}
+.popup form input{
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+.popup form button{
+    justify-content: center;
+    height: 30px;
+    border-radius: 3px;
+    border: 0;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #EA1179;
+    color: #fff;
+}
+*/
